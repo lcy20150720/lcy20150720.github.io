@@ -7,4 +7,12 @@
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+	position: relative;
+}
+.aside{
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }

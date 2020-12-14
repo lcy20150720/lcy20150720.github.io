@@ -499,9 +499,34 @@ body{
     width: 100%;
 }
 /************************变灰效果**************************************/
-.change_box .image_box:nth-child(2){
-    filter: grayscale(100%);
+.change_box .image_box:nth-child(1){
+    filter: blur(5px); /*高斯模糊*/
 }
+.change_box .image_box:nth-child(2){
+    filter: grayscale(100%); /* 灰度*/
+}
+.change_box .image_box:nth-child(3){
+    filter: brightness(0.4);/*亮度*/
+}
+.change_box .image_box:nth-child(4){
+    filter: contrast(200%);/*对比度*/
+}
+.change_box .image_box:nth-child(5){
+    filter: drop-shadow(16px 16px 20px blue);/*投影*/
+}
+.change_box .image_box:nth-child(6){
+    filter: invert(75%);/*反相*/
+}
+.change_box .image_box:nth-child(7){
+    filter: opacity(25%);/*透明度*/
+}
+.change_box .image_box:nth-child(8){
+    filter: saturate(30%);/*饱和度*/
+}
+.change_box .image_box:nth-child(9){
+    filter: sepia(60%);/*褐色*/
+}
+
 
 /************************渐变文字效果**************************************/
 .hello_txt{
@@ -512,6 +537,6 @@ body{
   animation: hue 3s linear infinite;
 }
 @keyframes hue {
-  from { filter: hue-rotate(0deg); }
+  from { filter: hue-rotate(0deg); /*色调*/ }
   to { filter: hue-rotate(360deg); }
 }
