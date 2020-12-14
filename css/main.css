@@ -551,6 +551,8 @@ body{
     display: block;
     text-decoration: none;
     position: relative;
+    overflow: hidden;
+    border-radius: 5px;
 }
 .circle_btn:not([disabled]):active::after {
     transform: translate(-50%,-50%) scale(0);
