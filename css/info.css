@@ -1,0 +1,10 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.center_block{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
