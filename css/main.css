@@ -540,3 +540,31 @@ body{
   from { filter: hue-rotate(0deg); /*色调*/ }
   to { filter: hue-rotate(360deg); }
 }
+/************************按钮效果**************************************/
+.circle_btn{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: red;
+    display: block;
+    text-decoration: none;
+}
+.circle_btn:not([disabled]):active::after {
+    transform: translate(-50%,-50%) scale(0);
+    opacity: .3;
+    transition: 0s;
+}
+.circle_btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%; height: 100%;
+    left: var(--x, 0); top: var(--y, 0);
+    pointer-events: none;
+    background: radial-gradient(circle, currentColor 10%, transparent 10.01%) no-repeat 50%;
+    transform: translate(-50%,-50%) scale(10);
+    opacity: 0;
+    transition: transform .3s, opacity .8s;
+}
