@@ -550,6 +550,7 @@ body{
     background: red;
     display: block;
     text-decoration: none;
+    position: relative;
 }
 .circle_btn:not([disabled]):active::after {
     transform: translate(-50%,-50%) scale(0);
