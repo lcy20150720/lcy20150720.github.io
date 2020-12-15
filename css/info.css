@@ -190,6 +190,13 @@ body {
 .main .pro_wrap .item_box img{
     width: 100%;
 }
+.main .pc .item_box{
+    width: 440px;
+    height: 227px;
+}
+.main .pc .item_box:nth-child(2){
+    margin: 0 0 20px 0;
+}
 @keyframes hue {
     from {
         filter: hue-rotate(0deg);
