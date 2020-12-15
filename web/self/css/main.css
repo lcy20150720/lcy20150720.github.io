@@ -1,0 +1,53 @@
+*{padding: 0;margin: 0;list-style: none;}
+body,html{background: #f8f9fc!important;}
+.page_wrap{width: 10rem;margin: 0 auto;}
+.info_head{padding: 1.39rem .45rem 0 .45rem;box-sizing: border-box;height: 3.65rem;position: relative;color: #fff;}
+.info_head p{font-size: .32rem;margin-bottom: .3rem;}
+.info_head h2{font-size: .8rem;}
+.info_head .icon_menu{width: .77rem;height: .57rem;display: block;text-decoration: none;display: block;background: url(../img/icon_menu.png) no-repeat;
+	background-size: 100% 100%;position: absolute;top: 1.76rem;right: .45rem;}
+.info_top{width: 100%;min-height: 8.7rem;background: url(../img/info_top.jpg) no-repeat center top;background-size: contain;box-sizing: border-box;}
+.info_top .info_wp{width: 9.12rem;height: 7.09rem;background: rgba(255,255,255,.89);border-radius: .13rem;margin: 0 auto;
+padding: .72rem .88rem .45rem .83rem;box-sizing: border-box;box-shadow: 0 4px 68px rgba(39,52,125,.25);}
+.info_top .info_wp h3{color:#212c67;font-size: .43rem;font-weight: normal;margin-bottom: .72rem}
+.info_top .info_wp .type_label{width: 1.04rem;height: .69rem;line-height: .69rem;text-align: center;background: #fba703;border-radius: .13rem;
+display: inline-block;color: #fff;font-size: .32rem;margin-right: .27rem;vertical-align: top;}
+.info_top .info_wp .total{font-size: 0.96rem;color: #212c68;position: relative;top: -.3rem;}
+.info_top .info_wp .lf_txt{font-size: .47rem;color:#212c68;min-width: 2.52rem;}
+.info_top .info_wp .icon_visa{position: absolute;right: 0.48rem;top: 50%;margin-top: -.24rem;width: .76rem;height: 0.48rem;display: block;background: url(../img/icon_visa.png) no-repeat;
+background-size: 100% 100%;}
+.info_top .info_wp .txt_row{width: 100%;display: flex;position: relative;}
+.info_top .info_wp .txt_row:last-child{margin-top: 1.2rem;}
+.info_top .info_wp .txt_row>div{display: inline-block;}
+.info_top .info_wp .usage{color:#f90107;font-size: .47rem;}
+.info_top .info_wp .coins{color:#212c67;font-size: .32rem;margin-top: .32rem;}
+.info_top .info_wp .code_num{color: #212c68;font-size: .48rem;width: 4.05rem;height: 1.09rem;line-height: .9rem;border: .11rem solid rgba(239,170,60,.4);
+border-radius: .5rem;display: block;text-align: center;box-sizing: border-box;position: relative;left: 0.67rem;top: -.25rem;}
+.info_top .info_wp .code_num i{border-left: .18rem solid transparent;border-right: .18rem solid transparent;border-top: .18rem solid transparent;
+border-bottom: .18rem solid transparent;border-left-color: #7ed321;display: inline-block;margin-right: .42rem}
+.info_bom{padding-top: 0.93rem;position: relative;}
+.info_bom h3{color:#212c67;font-size: 0.69rem;width: 3.76rem;text-align: justify;text-align-last: justify;}
+.info_bom .english_txt{color:#ff001e;font-size: 0.4rem;margin: 0 0 .67rem 0;}
+.info_bom h3,.info_bom .english_txt{padding-left: 0.72rem;}
+.info_bom .row_wp{width: 100%;height: 1.47rem;background: #fff;position: relative;margin-bottom: 0.11rem;display: flex;}
+.info_bom .row_wp a:first-child{padding: 0 0 0 0.59rem;box-sizing: border-box;}
+.info_bom .row_wp.row_green a{width: 100%;}
+.info_bom .row_wp.row_red:before{content:'';width: .11rem;height: 100%;display: block;position: absolute;left: 0;top: 0;background: url(../img/red_bar.png) no-repeat;
+background-size: 100% 100%;}
+.info_bom .row_wp.row_green:before{content:'';width: .11rem;height: 100%;display: block;position: absolute;left: 0;top: 0;background: url(../img/green_bar.png) no-repeat;
+background-size: 100% 100%;}
+.info_bom .row_wp a{width: 50%;height: 100%;display: inline-block;text-decoration: none;}
+.info_bom .row_wp a i{width: .69rem;height: .69rem;display: inline-block;background: url(../img/ava.png) no-repeat;background-size: 100% 100%;position: relative;top: .2rem;
+margin-right: .4rem;}
+.info_bom .row_wp a span{font-size: .35rem;color:#414141;line-height: 1.47rem;}
+.info_bom .row_wp a:nth-child(2){padding-left: 0.96rem;}
+.info_bom .rows.last{padding: 1.25rem 0 .72rem 0;position: relative;}
+.info_bom .rows.last:after{width: 3.57rem;height: .13rem;display: block;position: absolute;bottom: .27rem;background: #212c67;border-radius: .13rem;
+left: 50%;margin-left: -1.79rem;content:'';}
+.bom_btns{position: absolute;left: 50%;bottom: 0.91rem;}
+.bom_btns a{width: 1.84rem;height: 1.8rem;border-radius: 50%;display: inline-block;text-decoration: none;text-align: center;color:#fff;font-size: .32rem;}
+.bom_btns a.bg_blue{background: #243071;margin-right: .4rem;}
+.bom_btns a.bg_yellow{background: #fda804;}
+.bom_btns a i{width: .75rem;height: .61rem;display: block;margin: .29rem auto .24rem auto;}
+.bom_btns a.recharge_btn i{background: url(../img/icon_01.png) no-repeat;}
+.bom_btns a.withdraw_btn i{background: url(../img/icon_02.png) no-repeat;}

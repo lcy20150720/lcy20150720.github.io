@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+	<svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+		<symbol viewBox="0 0 44 44" id="icon-arrow">
+	         <path d="M22.6527924,12.6979839 L34.9095035,22.9825857 C35.1896977,23.2176965 35.4093809,23.4981636 35.5668253,23.8042387 C35.8425389,24.2235593 36.0024414,24.725194 36.0024414,25.2641758 C36.0024414,26.7369351 34.8085341,27.9308425 33.3357747,27.9308425 L6.66910807,27.9308425 C5.19634874,27.9308425 4.00244141,26.7369351 4.00244141,25.2641758 C4.00244141,23.7914165 5.19634874,22.5975091 6.66910807,22.5975091 L26.1524414,22.5970403 L19.2245918,16.7835543 C18.0963927,15.8368828 17.9492355,14.1548679 18.8959069,13.0266688 C19.8425784,11.8984697 21.5245933,11.7513125 22.6527924,12.6979839 Z" id="形状结合" fill="#CCCCCC"></path>
+	    </symbol>
+	    <symbol viewBox="0 0 40 40" id="toast-fail">
+	        <path
+	                d="M19.5290781,0.423943178 C20.0943357,-0.141314393 21.0107993,-0.141314393 21.5760568,0.423943178 C22.1413144,0.989200749 22.1413144,1.90566435 21.5760568,2.47092192 L21.5760568,2.47092192 L13.047,11 L21.5760568,19.5290781 C22.1413144,20.0943357 22.1413144,21.0107993 21.5760568,21.5760568 C21.0107993,22.1413144 20.0943357,22.1413144 19.5290781,21.5760568 L11,13.047 L2.47092192,21.5760568 C1.94099295,22.1059858 1.1023868,22.1391064 0.533873181,21.6754185 L0.423943178,21.5760568 C-0.141314393,21.0107993 -0.141314393,20.0943357 0.423943178,19.5290781 L0.423943178,19.5290781 L8.953,11 L0.423943178,2.47092192 C-0.141314393,1.90566435 -0.141314393,0.989200749 0.423943178,0.423943178 C0.989200749,-0.141314393 1.90566435,-0.141314393 2.47092192,0.423943178 L11,8.953 Z"
+	                id="形状结合">
+	        </path>
+    	</symbol>
+    	<symbol viewBox="0 0 44 44" id="icon-close">
+        	<path
+                d="M22,0 C34.1502645,0 44,9.8497355 44,22 C44,34.1502645 34.1502645,44 22,44 C9.8497355,44 0,34.1502645 0,22 C0,9.8497355 9.8497355,0 22,0 Z M16.5107937,12.6661905 C15.6516402,11.807037 14.2586773,11.807037 13.3995238,12.6661905 C12.5403704,13.5253439 12.5403704,14.9183069 13.3995238,15.7774603 L13.3995238,15.7774603 L19.622,22 L13.3995238,28.2225397 C12.5403704,29.0816931 12.5403704,30.4746561 13.3995238,31.3338095 C14.2586773,32.192963 15.6516402,32.192963 16.5107937,31.3338095 L22.733,25.111 L28.955873,31.3338095 C29.7741144,32.1520509 31.0765367,32.1910148 31.9408906,31.4507011 L32.0671428,31.3338095 C32.9262963,30.4746561 32.9262963,29.0816931 32.0671428,28.2225397 L32.0671428,28.2225397 L25.844,21.999 L32.0671428,15.7774603 C32.9262963,14.9183069 32.9262963,13.5253439 32.0671428,12.6661905 C31.2079894,11.807037 29.8150264,11.807037 28.955873,12.6661905 L22.733,18.888 Z"
+                id="形状结合">
+        	</path>
+    	</symbol>
+    	<symbol viewBox="0 0 44 44" id="icon-rg-open">
+	        <path
+	                d="M-5.01045817,34.2656492 L12.4558679,15.5162392 C12.7599095,15.1898626 13.2400905,15.1898626 13.5441321,15.5162392 L31.0104582,34.2656492 C31.9495702,35.2737488 33.4417196,35.2396977 34.3432671,34.189594 C35.2448147,33.1394902 35.2143626,31.4709867 34.2752506,30.4628871 L16.8089245,11.7134771 C14.6806335,9.42884095 11.3193665,9.42884095 9.19107548,11.7134771 L-8.27525062,30.4628871 C-9.21436264,31.4709867 -9.24481467,33.1394902 -8.34326713,34.189594 C-7.44171959,35.2396977 -5.94957019,35.2737488 -5.01045817,34.2656492 Z"
+	                id="路径备份-2"
+	                transform="translate(13.000000, 22.500000) rotate(-270.000000) translate(-13.000000, -22.500000) ">
+	        </path>
+	    </symbol>
+	    <symbol viewBox="0 0 44 44" id="icon-add">
+	        <path
+	                d="M22,0 C23.6568542,0 25,1.40710507 25,3.14285714 L25,3.14285714 L25,19 L40.8571429,19 C42.5309038,19 43.8990733,20.24892 43.9946648,21.8237272 L44,22 C44,23.6568542 42.5928949,25 40.8571429,25 L40.8571429,25 L25,25 L25,40.8571429 C25,42.5309038 23.75108,43.8990733 22.1762728,43.9946648 L22,44 C20.3431458,44 19,42.5928949 19,40.8571429 L19,40.8571429 L19,24.999 L3.14285714,25 C1.46909622,25 0.100926698,23.75108 0.00533520262,22.1762728 L0,22 C0,20.3431458 1.40710507,19 3.14285714,19 L3.14285714,19 L19,18.999 L19,3.14285714 C19,1.46909622 20.24892,0.100926698 21.8237272,0.00533520262 Z"
+	                id="形状结合"></path>
+	    </symbol>
+	    <symbol viewBox="0 0 44 44" id="icon-degree">
+	        <path
+	                d="M19,-14.8571429 L19,22.8571429 C19,24.5928949 20.4071051,26 22.1428571,26 C23.8786092,26 25.2857143,24.5928949 25.2857143,22.8571429 L25.2857143,-14.8571429 C25.2857143,-16.5928949 23.8786092,-18 22.1428571,-18 C20.4071051,-18 19,-16.5928949 19,-14.8571429 Z"
+	                id="路径-2备份-2"
+	                transform="translate(22.142857, 4.000000) rotate(-270.000000) translate(-22.142857, -4.000000) "></path>
+	    </symbol>
+	</svg>
+	<div class="page_wrap">
+		<div class="login_tips">
+			<span>登录后享受更多优惠</span>
+			<a href="javascript:;">登录</a>
+		</div>
+		<div class="list">
+			<div class="cell">
+				<div class="row">
+					<h3>目的地意向<span>·必填</span></h3>
+					<div class="inp_box action_box">
+						<input type="text" placeholder="请填写目的地意向">
+						<a href="javascript:;" class="icon_open">
+							<svg class="icon-rg-open" aria-hidden="true" width=".27rem" height=".27rem">
+						        <use xlink:href="#icon-rg-open" x="0" y="0" fill="#444" width=".27rem" height=".27rem"></use>
+						    </svg>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<h3>目的地<span>·必填</span></h3>
+					<div class="inp_box">
+						<input type="text" placeholder="请填写目的地">
+					</div>
+				</div>
+				<div class="row">
+					<h3>出游日期<span>·必填</span></h3>
+					<div class="inp_box">
+						<input type="text" placeholder="请填写出游日期">
+						<a href="javascript:;" class="icon_open">
+							<svg class="icon-rg-open" aria-hidden="true" width=".27rem" height=".27rem">
+						        <use xlink:href="#icon-rg-open" x="0" y="0" fill="#444" width=".27rem" height=".27rem"></use>
+						    </svg>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<h3>出行天数<span>·必填</span></h3>
+					<div class="inp_box  action_box">
+						<input type="text" placeholder="请填写出行天数">
+						<a href="javascript:;" class="icon_open">
+							<svg class="icon-rg-open" aria-hidden="true" width=".27rem" height=".27rem">
+						        <use xlink:href="#icon-rg-open" x="0" y="0" fill="#444" width=".27rem" height=".27rem"></use>
+						    </svg>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<h3>出游人数<span>·必填</span></h3>
+					<div class="inp_box action_box">
+						<input type="text" placeholder="请填写出游人数">
+						<a href="javascript:;" class="icon_open">
+							<svg class="icon-rg-open" aria-hidden="true" width=".27rem" height=".27rem">
+						        <use xlink:href="#icon-rg-open" x="0" y="0" fill="#444" width=".27rem" height=".27rem"></use>
+						    </svg>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<h3>人均预算<span>·必填</span></h3>
+					<div class="inp_box">
+						<input type="text" placeholder="请填写预算金额">
+						<span class="unit_txt">元/人</span>
+					</div>
+				</div>
+				<div class="row">
+					<h3>上下车地址<span>·必填</span></h3>
+					<div class="inp_box">
+						<input type="text" placeholder="请填写您想上下车地址">
+					</div>
+				</div>
+			</div>
+			<div class="cell upmarket">
+				<div class="sel_row">
+					<h3>交通方式</h3>
+					<div class="sel_list clearfix">
+						<a href="javascript:;" class="sel_item">汽车</a>
+						<a href="javascript:;" class="sel_item">飞机</a>
+						<a href="javascript:;" class="sel_item">火车/高铁/动车</a>
+						<a href="javascript:;" class="sel_item">自理</a>
+					</div>
+				</div>
+				<div class="sel_row">
+					<h3>星级酒店</h3>
+					<div class="sel_list clearfix">
+						<a href="javascript:;" class="sel_item">经济/二星</a>
+						<a href="javascript:;" class="sel_item">高级/三星</a>
+						<a href="javascript:;" class="sel_item">豪华/四星</a>
+						<a href="javascript:;" class="sel_item">超豪华/五星</a>
+						<a href="javascript:;" class="sel_item">特色客栈</a>
+						<a href="javascript:;" class="sel_item">连锁品牌</a>
+					</div>
+				</div>
+				<div class="sel_row">
+					<h3>用餐要求</h3>
+					<div class="sel_list clearfix">
+						<a href="javascript:;" class="sel_item">自理</a>
+						<a href="javascript:;" class="sel_item">不限</a>
+					</div>
+				</div>
+				<div class="sel_row">
+					<h3>导游服务</h3>
+					<div class="sel_list clearfix">
+						<a href="javascript:;" class="sel_item">不需要</a>
+						
+					</div>
+				</div>
+				<div class="sel_row">
+					<h3>其它需求</h3>
+					<div class="text_area">
+						<textarea name="" id="" cols="30" rows="10" placeholder="选填。您可以输入其它更多个性化需求，例如必玩景点，特色美食等。"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="cell m_top_20 contact_info">
+				<h3>联系人信息<span>·必填</span></h3>
+				<div class="inp_box clearfix">
+					<div class="contactor_inp">
+						<input type="text" placeholder="请输入联系人姓名" value="" class="name_inp">
+						<a href="javascript:;" class="clear_btn">
+							<svg class="icon-close" aria-hidden="true" width=".37rem" height=".37rem">
+						        <use xlink:href="#icon-close" x="0" y="0" fill="#ccc" width=".37rem" height=".37rem"></use>
+						    </svg>
+						</a>
+					</div>
+					<div class="contactor_sex">
+						<a href="javascript:;" class="switch_btn">
+							<span class="switch_txt">先生</span>
+							<i class="switch_slider"></i>
+						</a>
+					</div>
+				</div>
+				<div class="inp_box">
+					<input type="text" placeholder="请输入联系人电话">
+				</div>
+				<div class="inp_box">
+					<input type="text" placeholder="请输入联系人电子邮箱">
+				</div>
+				<div class="inp_box company_name">
+					<input type="text" placeholder="请输入公司名称">
+				</div>
+			</div>
+		</div>
+		<footer class="foo">
+			<a href="javascript:;" class="cancel_btn">取消</a>
+			<a href="javascript:;" class="confirm_btn">免费获取方案</a>
+		</footer>
+	</div>
+
+	<!-- 目的地意向弹层 start-->
+	<div class="pop_box area_pop">
+		<div class="pop_shadow"></div>
+		<div class="pop_inner">
+			<div class="pop_head">填写目的地意向
+				<a href="javascript:;" class="close_btn">
+					<svg class="toast-fail" aria-hidden="true" width=".53rem" height=".53rem">
+						<use xlink:href="#toast-fail" x="0" y="0" fill="#ccc" width=".53rem" height=".53rem"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="pop_con">
+				<div class="item_row">
+					<div class="items_wrap clearfix">
+						<a href="javascript:;" class="sel_item cur">广东省内</a>
+						<a href="javascript:;" class="sel_item">国内</a>
+						<a href="javascript:;" class="sel_item">港澳</a>
+						<a href="javascript:;" class="sel_item">出国</a>
+					</div>
+				</div>
+			</div>
+			<div class="pop_foo">
+				<a href="javascript:;" class="cancel_btn">取消</a>
+				<a href="javascript:;" class="confirm_btn">确定</a>
+			</div>
+		</div>
+	</div>
+	<!-- 目的地意向弹层 end-->
+
+	<!-- 出行天数弹层 start-->
+	<div class="pop_box days_pop">
+		<div class="pop_shadow"></div>
+		<div class="pop_inner">
+			<div class="pop_head">填写出行天数
+				<a href="javascript:;" class="close_btn">
+					<svg class="toast-fail" aria-hidden="true" width=".53rem" height=".53rem">
+						<use xlink:href="#toast-fail" x="0" y="0" fill="#ccc" width=".53rem" height=".53rem"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="pop_con">
+				<div class="item_row">
+					<div class="items_wrap clearfix">
+						<a href="javascript:;" class="sel_item cur">1 ~ 3天</a>
+						<a href="javascript:;" class="sel_item">4 ~ 6天</a>
+						<a href="javascript:;" class="sel_item">7 ~ 9天</a>
+						<a href="javascript:;" class="sel_item">10 ~ 12天</a>
+						<a href="javascript:;" class="sel_item">12天以上</a>
+						<a href="javascript:;" class="sel_item">暂不确定</a>
+					</div>
+				</div>
+			</div>
+			<div class="pop_foo">
+				<a href="javascript:;" class="cancel_btn">取消</a>
+				<a href="javascript:;" class="confirm_btn">确定</a>
+			</div>
+		</div>
+	</div>
+	<!-- 出行天数弹层 end-->
+
+	<!-- 出行人数弹层 start-->
+	<div class="pop_box members_pop">
+		<div class="pop_shadow"></div>
+		<div class="pop_inner">
+			<div class="pop_head">填写出行人数
+				<a href="javascript:;" class="close_btn">
+					<svg class="toast-fail" aria-hidden="true" width=".53rem" height=".53rem">
+						<use xlink:href="#toast-fail" x="0" y="0" fill="#ccc" width=".53rem" height=".53rem"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="pop_con">
+				<div class="item_row">
+					<span class="lf_txt">成人</span>
+					<span class="rg_count">
+						<a href="javascript:;" class="del_btn">
+							<svg class="icon-degree" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-degree" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+						<input type="text" value="2">
+						<a href="javascript:;" class="add_btn">
+							<svg class="icon-add" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-add" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+					</span>
+				</div>
+				<div class="item_row">
+					<span class="lf_txt">儿童</span>
+					<span class="rg_count">
+						<a href="javascript:;" class="del_btn">
+							<svg class="icon-degree" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-degree" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+						<input type="text" value="0">
+						<a href="javascript:;" class="add_btn">
+							<svg class="icon-add" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-add" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+					</span>
+				</div>
+				<div class="item_row">
+					<span class="lf_txt">婴儿</span>
+					<span class="rg_count">
+						<a href="javascript:;" class="del_btn">
+							<svg class="icon-degree" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-degree" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+						<input type="text" value="0">
+						<a href="javascript:;" class="add_btn">
+							<svg class="icon-add" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-add" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+					</span>
+				</div>
+				<div class="item_row">
+					<span class="lf_txt">长者</span>
+					<span class="rg_count">
+						<a href="javascript:;" class="del_btn">
+							<svg class="icon-degree" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-degree" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+						<input type="text" value="0">
+						<a href="javascript:;" class="add_btn">
+							<svg class="icon-add" aria-hidden="true" width=".27rem" height=".27rem">
+								<use xlink:href="#icon-add" x="0" y="0" fill="#666" width=".27rem" height=".27rem"></use>
+							</svg>
+						</a>
+					</span>
+				</div>
+			</div>
+			<div class="pop_foo">
+				<a href="javascript:;" class="cancel_btn">取消</a>
+				<a href="javascript:;" class="confirm_btn">确定</a>
+			</div>
+		</div>
+	</div>
+	<!-- 出行人数弹层 end-->
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+	<script>
+		window.addEventListener('load', function(){
+
+			//高级定制选项点击
+			var selList = document.querySelector('.upmarket').querySelectorAll('.sel_list');
+			if(selList.length>0){
+				for(var i=0; i<selList.length; i++){
+					(function(j){
+						var selItems = selList[j].querySelectorAll('.sel_item');
+						if(selItems.length>0){
+							for(var k=0; k<selItems.length; k++){
+								(function(m){
+									selItems[m].addEventListener('click', function(){
+										if(selItems[m].className.indexOf('cur') == -1){
+											selItems[m].classList.add('cur');
+										}else{
+											selItems[m].classList.remove('cur');
+										}
+									})
+								})(k)
+							}
+						}
+					})(i)
+				}
+			}
+
+			var nameInp = document.querySelector('.name_inp');
+			var clearBtn = document.querySelector('.clear_btn');
+
+			//监听联系人输入框变化
+			nameInp.oninput = function(obj){
+				var str = obj.target.value; 
+				if(str!=''){
+					clearBtn.style.display = 'block';
+				}else{
+					clearBtn.style.display = 'none';
+				}
+			}
+			//清空
+			clearBtn.addEventListener('click', function(){
+				nameInp.value = '';
+				clearBtn.style.display = 'none';
+			})
+
+			// switch按钮切换
+			var switchBtn = document.querySelector('.switch_btn');
+			var switchTxt = switchBtn.querySelector('.switch_txt');
+
+			switchBtn.addEventListener('click', function(){
+				if(this.className.indexOf('switch_on') == -1){
+					this.classList.add('switch_on');
+					switchTxt.innerHTML = '女士';
+				}else{
+					this.classList.remove('switch_on');
+					switchTxt.innerHTML = '先生';
+				}
+			});
+
+			//----------------------目的地意向弹层start------------------------------//
+			
+			// 目的地意向显示弹层
+			var actionList = document.querySelectorAll('.action_box');
+			var areaPop = document.querySelector('.area_pop');
+			var daysPop = document.querySelector('.days_pop');
+			var membersPop = document.querySelector('.members_pop');
+
+			if(actionList.length>0){
+				for(var i=0; i<actionList.length; i++){
+					(function(j){
+						actionList[j].addEventListener('click', function(){
+							if(j == 0){
+								areaPop.classList.add('moved');
+							}else if(j == 1){
+								daysPop.classList.add('moved');
+							}else if(j == 2){
+								membersPop.classList.add('moved');
+							}else{
+
+							}
+						})
+					})(i)
+				}
+			}
+
+			//关闭目的地意向弹出层
+			var closeBtn = areaPop.querySelector('.close_btn');
+			closeBtn.addEventListener('click', function(){
+				areaPop.classList.remove('moved');
+			});
+
+			//选择目的地意向
+			var selItemList = areaPop.querySelectorAll('.sel_item');
+			if(selItemList.length>0){
+				for(var i=0; i<selItemList.length; i++){
+					(function(j){
+						selItemList[j].addEventListener('click', function(){
+							if(selItemList[j].className.indexOf('cur') == -1){
+								selItemList[j].classList.add('cur');
+							}else{
+								selItemList[j].classList.remove('cur');
+							}
+						})
+					})(i)
+				}
+			}
+
+			var cancelBtn = areaPop.querySelector('.cancel_btn');
+			var confirmBtn = areaPop.querySelector('.confirm_btn');
+
+			//取消
+			cancelBtn.addEventListener('click', function(){
+				areaPop.classList.remove('moved');
+			});
+			
+			//确定
+			confirmBtn.addEventListener('click', function(){
+				areaPop.classList.remove('moved');
+			});
+
+			//----------------------行程天数弹层start------------------------------//
+
+			//关闭行程天数弹出层
+			var daysPopCloseBtn = daysPop.querySelector('.close_btn');
+			daysPopCloseBtn.addEventListener('click', function(){
+				daysPop.classList.remove('moved');
+			});
+
+			//选择目的地意向
+			var daysItemList = daysPop.querySelectorAll('.sel_item');
+			if(daysItemList.length>0){
+				for(var i=0; i<daysItemList.length; i++){
+					(function(j){
+						daysItemList[j].addEventListener('click', function(){
+							for(var k=0; k<daysItemList.length; k++){
+								if(daysItemList[k].className.indexOf('cur')!=-1){
+									daysItemList[k].classList.remove('cur');
+								}
+							}
+							daysItemList[j].classList.add('cur');
+						})
+					})(i)
+				}
+			}
+
+
+			var daysPopCancelBtn = daysPop.querySelector('.cancel_btn');
+			var daysPopConfirmBtn = daysPop.querySelector('.confirm_btn');
+
+			//取消
+			daysPopCancelBtn.addEventListener('click', function(){
+				daysPop.classList.remove('moved');
+			});
+			
+			//确定
+			daysPopConfirmBtn.addEventListener('click', function(){
+				daysPop.classList.remove('moved');
+			});
+
+			//----------------------出行人数弹层start------------------------------//
+
+			var membersPopCloseBtn =  membersPop.querySelector('.close_btn');
+			membersPopCloseBtn.addEventListener('click', function(){
+				membersPop.classList.remove('moved');
+			});
+
+
+			var membersPopCancelBtn = membersPop.querySelector('.cancel_btn');
+			var membersPopConfirmBtn = membersPop.querySelector('.confirm_btn');
+
+			//取消
+			membersPopCancelBtn.addEventListener('click', function(){
+				membersPop.classList.remove('moved');
+			});
+			
+			//确定
+			membersPopConfirmBtn.addEventListener('click', function(){
+				membersPop.classList.remove('moved');
+			});
+
+			
+			var isCompany = false; //是否为公司定制
+			var countList = membersPop.querySelectorAll('.rg_count');
+
+			//个人定制时隐藏公司名称填写项
+			if(!isCompany){
+				document.querySelector('.company_name').style.display = 'none';
+			}
+
+			//计数
+			if(countList.length>0){
+				for(var i=0; i<countList.length; i++){
+					(function(j){
+						var delBtn = countList[j].querySelector('.del_btn');
+						var addBtn = countList[j].querySelector('.add_btn');
+						var inpBox = countList[j].querySelector('input');
+
+						//减少
+						delBtn.addEventListener('click', function(){
+							var minNum = 0;
+
+							//个人定制成人数量默认2个，公司定制为10个
+							if(j == 0){
+								minNum = isCompany ? 10 : 2;  
+							}
+
+							if(inpBox.value>minNum){
+								var num = parseInt(inpBox.value)-1;
+								inpBox.value = num;
+							}
+						});
+
+						//增加
+						addBtn.addEventListener('click', function(){
+							var num = parseInt(inpBox.value)+1;
+							inpBox.value = num;
+						});
+						
+					})(i)
+				}
+			}
+
+
+		})
+	</script>
+</body>
+</html>
