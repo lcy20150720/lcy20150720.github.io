@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+body {
+    background: #F7F7F7;
+}
+
+.banner {
+    width: 100%;
+    height: 330px;
+    background: url(../img/banner.png) no-repeat center top;
+    background-size: cover;
+}
+
+.service {
+    width: 100%;
+    height: 844px;
+    background: url(../img/service.png) no-repeat center top;
+    background-size: cover;
+}
+
+.center_block {
+    width: 1200px;
+    margin: 0 auto 60px auto;
+    background: #fff;
+    border-radius: 16px;
+    position: relative;
+}
+
+.tour_form {
+    min-height: 1586px;
+    margin-top: -50px;
+    padding: 40px 128px 88px 128px;
+    box-sizing: border-box;
+}
+
+.tour_form .sec_top {
+    margin-bottom: 32px;
+}
+
+.tour_form h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.tour_form h3 span {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.tour_form .tour_type .sec_bom a.sel_item {
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+}
+.tour_form .tour_type .sec_bom a.sel_item:nth-child(1){
+	 width: 96px;
+}
+.tour_form .tour_type .sec_bom a.sel_item:nth-child(2){
+	 width: 232px;
+}
+.tour_form .sel_item {
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+
+.tour_form .tour_type .sec_bom a.cur {
+    background: rgba(221, 179, 71, 0.1);
+    color: #BDA361;
+}
+
+.tour_form .form_part {
+    padding-bottom: 60px;
+}
+.tour_form .form_part:last-child{
+	padding-bottom: 0;
+}
+.tour_form .item_box {
+    width: 432px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 16px;
+}
+
+.tour_form .item_box h4 {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.tour_form .item_box .important_sign {
+    color: #E62129;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+.steps {
+    height: 340px;
+    padding: 40px 0 0 0;
+    box-sizing: border-box;
+}
+
+.steps img {
+    display: block;
+    margin: 0 auto;
+}
+
+.tour_form .item_box .sel_item{
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+.tour_form .item_box .sel_item.selected{
+	border: 1px solid #BDA361;
+	background: rgba(221, 179, 71, 0.1);
+	color: #BDA361;
+}
+.tour_form .item_box .sel_item:last-child ,
+.tour_form .item_box .sel_item:nth-child(4n){
+    margin-right: 0;
+}
+
+.tour_form .item_box:nth-child(2n-1) {
+    margin-right:80px;
+    box-sizing: border-box;
+}
+
+.tour_form .inp_wp {
+    width: 432px;
+    height: 36px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.tour_form .inp_wp input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 12px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 4px;
+}
+
+.tour_form .inp_wp input::placeholder {
+    color: #999;
+}
+
+.tour_form .date_inp {
+    width: 320px;
+    display: inline-block;
+}
+
+.tour_form .date_inp svg {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.tour_form .checkbox-group{
+	display: inline-block;
+	float: right;
+}
+.tour_form .item_box .font_12{
+	font-size: 12px;
+}
+.tour_form .item_box.w944{
+	width: 944px;
+	margin-right: 0;
+}
+.tour_form .item_box .text_area{
+	width: 944px;
+	height: 120px;
+	border-radius: 4px;
+	border: 1px solid #DDDDDD;
+	box-sizing: border-box;
+}
+.tour_form .item_box textarea{
+	width: 100%;
+	height: 100%;
+	border:none;
+	resize: none;
+	border-radius: 4px;
+}
+.tour_form .item_box .contactor_inp{
+	width: 284px;
+	display: inline-block;
+}
+.access_pro_btn{
+	width: 400px;
+	height: 80px;
+	line-height: 80px;
+	background: linear-gradient(90deg, #E2C885 0%, #BDA361 100%);
+	box-shadow: 0px 6px 12px 0px #EEDDAF;
+	border-radius: 45px;
+	color: #fff;
+	font-size: 24px;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -200px;
+	text-align: center;
+	text-decoration: none;
+}
+.tour_form .hide_block{
+	display: none;
+}
+
+/*多选*/
+.checkbox-op {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    margin-left: 24px;
+    float: left;
+}
+.checkbox-bg {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    position: relative;
+    top: 3px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    background: #fff
+}
+
+.checkbox-bg svg {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: none
+}
+
+.checkbox-op:hover .checkbox-bg {
+    border-color: #BDA361;
+}
+
+.checkbox-op.checkbox-checked svg {
+    display: inline-block
+}
+
+.checkbox-op.checkbox-checked .checkbox-bg {
+    background: #BDA361;
+    border-color: #BDA361;
+}
+
+.checkbox-op.checkbox-disabled:hover .checkbox-bg,
+.checkbox-op.checkbox-checked-disabled:hover .checkbox-bg {
+    border-color: #ddd
+}
+
+.checkbox-op.checkbox-disabled .checkbox-bg,
+.checkbox-op.checkbox-checked-disabled .checkbox-bg {
+    background: #eee
+}
+
+.checkbox-op.checkbox-checked-disabled svg {
+    display: inline-block
+}
+.tour_form .gender_selects .checkbox-bg{
+	margin-right: 1px;
+}
+/*计数*/
+.count_box{
+	margin:0 28px 16px 0;
+	display: inline-block;
+}
+.count_box:nth-child(2n){
+	margin-right: 0;
+}
+.count_box .count_wp.w156{
+    width: 156px;
+}
+.count_box input{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    vertical-align: top;
+    border-radius: 4px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    outline: none;
+}
+.count_box .count_wp{
+	height: 36px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.count_box .count_wp .add_btn,
+.count_box .count_wp .del_btn {
+    width: 35px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.count_box .count_wp .add_btn {
+    right: 0;
+}
+
+.count_box .count_wp .del_btn {
+    left: 0;
+}
+.count_box .count_wp .del_btn:hover,
+.count_box .count_wp .add_btn:hover{
+	background: #F7F7F7;
+}
+
+.count_box .add_btn svg,
+.count_box .del_btn svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.count_box .count_txt{
+	color: #333;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 0 0 11px;
+}
+.count_box .count_wp,
+.count_box .count_txt{
+	display: inline-block;
+	float: left;
+}
+.tour_days_pop{
+	width: 434px;
+	height: 164px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	border: 1px solid #EEEEEE;
+	position: absolute;
+	top: 36px;
+	left: 0;
+	z-index: 999;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.tour_days_pop h3{
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.tour_days_pop .items{
+	width: 100%;
+}
+.tour_days_pop .items .sel_item{
+	width: 86px;
+}
+
+.result_box{
+    min-height: 468px;
+    margin-top: -50px;
+    padding: 100px 128px 88px 128px;
+    box-sizing: border-box;
+}
+.result_box .cont_top{
+    width: 465px;
+    margin: 0 auto;
+}
+.result_box .toast_txt,.result_box svg{
+    float: left;
+    display: inline-block;
+}
+.result_box .toast_txt{
+    padding-left: 40px;
+    font-weight: bold;
+    color: #333;
+}
+.result_box .toast_txt h3{
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+.result_box .toast_txt p{
+    font-size: 16px;
+}
+.result_box .tips{
+    color: #666;
+    font-size: 14px;
+    margin-top: 100px;
+}
+.result_box .tips p{
+    margin-top: 10px;
+}
+
