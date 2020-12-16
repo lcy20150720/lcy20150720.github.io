@@ -80,6 +80,10 @@ body {
     margin: 20px auto 10px auto;
     box-sizing: border-box;
     border: 6px solid #eee;
+    transition: all 0.3s ease 0s;
+}
+.header_img:hover .header_wp{
+    animation: tada 1s;
 }
 .header_img img{
     display: block;
