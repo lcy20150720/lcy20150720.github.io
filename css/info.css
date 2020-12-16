@@ -156,6 +156,20 @@ body {
     animation: hue 3s linear infinite;
     margin-bottom: 30px;
 }
+.main .pro_wrap .move_block{
+     transform: translateY(40px);
+     opacity: 0;
+}
+.main .move .move_block{
+    transform: translateY(0);
+    opacity: 1;
+}
+.main .pro_wrap h3{
+    transition: transform .8s .0s, opacity .8s .0s;
+}
+.main .pro_wrap .all_pro{
+    transition: transform .8s .1s, opacity .8s .1s;
+}
 .main .pro_wrap>h3>span{
     position: relative;
     width: 300px;
