@@ -102,31 +102,12 @@
         </div>
         <script src="js/jquery-1.11.0.min.js"></script>
         <script>
-            $(document).on('ready scroll', function(event) {
-                divMove('.move_block');
-            });
-
-            function divMove(sel, only) {
-                winW = $(window).width(),
-                    winH = $(window).height(), //可视窗口高度
-                    scrollT = $(window).scrollTop(), //鼠标滚动的距离
-                    pu = $(window).width() / 1920;
-
-                $(sel).each(function(index, el) {
-                    var _this = $(this);
-
-                    if (_this.length && winH + scrollT - _this.offset().top > winH * (1 / 7) && scrollT < _this.height() + _this.offset().top) {
-
-                        if (_this.hasClass('move_block')) {
-                            _this.addClass('move');
-                        }
-
-                        if (!only) {
-                            _this.find('.move_block').addClass('move');
-                        }
-                    }
-                });
-            }
+           window.addEventListener('load', function(){
+                var objs =document.querySelectorAll('.pro_wrap');
+                objs.forEach(function(el, index){
+                    el.classList.add('move');
+                })
+           })
         </script>
     </body>
 
