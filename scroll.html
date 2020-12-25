@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/scroll.css">
+</head>
+<body>
+	<div id="fullpage">
+		<section class="section sec_01">
+			<div class="bg"></div>
+			<div class="circle_01"><img src="img/scroll/c1.png" alt=""></div>
+			<div class="circle_02"><img src="img/scroll/c2.png" alt=""></div>
+			<div class="circle_03"><img src="img/scroll/c3_2.png" alt=""></div>
+		</section>
+		<section class="section sec_02">
+			<div class="bg"></div>
+			<div class="con">我们以客户品牌宣传为导向专注于品牌创意设计，分析互联网发展趋势，结合企业品牌的行业特性，为您提供更精准的策划方案和视觉策划方案</div>
+			<div class="icon_all">
+				<ul>
+					<li class="s1"><div class="sq_img"><img src="img/scroll/icon_01.png" alt=""><p>品牌视觉设计</p><p>Brand visual design</p></div></li>
+					<li class="s2"><div class="sq_img"><img src="img/scroll/icon_02.png" alt=""><p>品牌网站建设</p><p>Brand website construction</p></div></li>
+					<li class="s3"><div class="sq_img"><img src="img/scroll/icon_03.png" alt=""><p>电子商务设计</p><p>Electronic commerce design</p></div></li>
+					<li class="s4"><div class="sq_img"><img src="img/scroll/icon_04.png" alt=""><p>移动应用设计</p><p>Mobile application design</p></div></li>
+				</ul>
+			</div>
+		</section>
+		<section class="section sec_03">
+			<div class="bg"></div>
+			<div class="desc">
+				<div class="desc_wp">
+					<div class="image_box"><img src="img/scroll/pic.jpg" alt=""></div>
+					<div class="text_box">
+						<h3>专业、专注</h3>
+						<p>我们以客户品牌宣传为导向专注于品牌创意设计，
+						分析互联网发展趋势，结合企业品牌的行业特性，
+						为您提供更精准的策划方案和视觉策划方案</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section sec_04">
+			<div class="bg"></div>
+			<div class="line">
+				<div class="con_wp">
+					<ul>
+						<li><span><img src="img/scroll/logo.png" alt=""></span><span>品牌标识</span></li>
+						<li><span><img src="img/scroll/logo.png" alt=""></span><span>界面设计</span></li>
+						<li><span><img src="img/scroll/logo.png" alt=""></span><span>平面设计</span></li>
+						<li><span><img src="img/scroll/logo.png" alt=""></span><span>网页设计</span></li>
+						<li><span><img src="img/scroll/logo.png" alt=""></span><span>UI视觉</span></li>
+						<li><span><img src="img/scroll/logo.png" alt=""></span><span>3D手绘</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				navigation: true,
+			});
+		});
+	</script>
+</body>
+</html>
