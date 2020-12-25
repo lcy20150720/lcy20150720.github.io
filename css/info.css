@@ -305,7 +305,7 @@ body {
 }
 
 .main .pro_wrap .show_btn {
-    width: 100px;
+    min-width: 100px;
     height: 30px;
     line-height: 30px;
     border: 1px solid #ddd;
@@ -315,6 +315,8 @@ body {
     display: inline-block;
     font-size: 14px;
     color: #333;
+    padding: 0 10px;
+    margin: 0 30px 20px 0;
 }
 
 .main .pro_wrap .show_btn:hover {
