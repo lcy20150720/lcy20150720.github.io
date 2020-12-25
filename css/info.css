@@ -263,3 +263,18 @@ body {
 .main .pro_wrap .pc .item_box:hover .lf_icon{
     left: 46%;
 }
+.main .pro_wrap .show_btn{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+}
+.main .pro_wrap .show_btn:hover{
+    background: #eee;
+}
