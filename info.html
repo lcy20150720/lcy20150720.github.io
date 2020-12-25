@@ -132,23 +132,54 @@
                         </div>
                     </div>
                     <div class="pro_wrap">
-                        <h3 class="move_block"><span></span>单页作品滚动展示<span></span></h3>
+                        <h3 class="move_block"><span></span>其它展示<span></span></h3>
                         <div class="all_pro move_block">
-                            <a href="scroll.html" class="show_btn">浏览作品</a>
+                            <a href="scroll.html" class="show_btn">浏览单页滚动作品(～￣▽￣)～</a>
+                            <a href="javascript:;" class="show_btn show_txt">浏览作者英文简介o(*￣▽￣*)o</a>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
+
+        <div class="popup">
+            <div class="popup_cont">
+                My name is Lai Chunying. I'm from Shantou. I graduated from Guangdong Polytechnic of industry and trade, majoring in computer application. I came out in July 2015 and have been engaged in front-end development technology post for more than five years.
+
+                At present, it is in the on-the-job status.
+
+                At present, I hope to find a job in front-end development.
+
+                So we sent our resume to the HR company, and then we sent it to the HR company.
+
+                I hope to have the opportunity to work with colleagues in our company, help each other in the same boat and grow together.
+
+                thank you.
+
+            </div>
+        </div>
+
         <script src="js/jquery-1.11.0.min.js"></script>
         <script>
            window.addEventListener('load', function(){
                 var loadObj = document.querySelector('.loading');
                 loadObj.style.display='none';
-                
+
                 var objs =document.querySelectorAll('.pro_wrap');
                 objs.forEach(function(el, index){
                     el.classList.add('move');
+                });
+
+                var btn = document.querySelector('.show_txt');
+                var pop = document.querySelector('.popup');
+                btn.addEventListener('click', function(){
+                     pop.style.display='block';
+                });
+
+                document.addEventListener('click', function(e){
+                    if(e.target.className.indexOf('show_txt')==-1){
+                        pop.style.display='none';
+                    }
                 })
            })
         </script>
